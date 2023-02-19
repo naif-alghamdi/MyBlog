@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
 
 * {
     box-sizing: border-box;
@@ -16,11 +17,38 @@ img {
     border-radius: 5%;
 }
 
-nav ul {}
+a {
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+}
+
+h2,
+h1 {
+    font-family: 'Gloock', serif;
+}
+
+header h1 {
+    /* border: 1px solid black; */
+}
+
+nav {
+    width: 50%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1em;
+    list-style-type: none;
+    /* border: 1px solid black; */
+}
 
 nav li {}
 
-nav a {}
+nav a {
+    font-weight: 600;
+}
 
 nav a:hover {}
 
@@ -30,20 +58,37 @@ nav a:hover {}
 } */
 
 header {
+    width: 100%;
     max-width: 960px;
+    min-width: 760px;
+    display: flex;
+    justify-content: space-between;
     margin: 0 auto;
+    padding-left: 2em;
     /* border: 1px solid darkcyan; */
+}
+
+.conainer {
+   width: 60%;
 }
 
 .contant {
     /* border: 1px solid firebrick; */
-    width: 60%;
+    width: 100%;
     max-width: 960px;
     margin: 0 auto;
+    margin-top: 2em;
+    /* padding-left: 1em;
+    padding-right: 1em; */
+    
 }
-.row {
+
+.one {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    min-width: 760px;
+    /* border: 1px solid black; */
+
     /* border: 1px solid goldenrod; */
 }
 
@@ -52,10 +97,55 @@ header {
 }
 
 .about-me {
-    max-width: 480px;
+    max-width: 560px;
+    margin-right: 2em;
+    margin-left: 2em;
+    /* border: 1px solid black; */
     /* border: 1px solid blue; */
 }
 
 .img-frame {
     width: 35%;
+    min-width: 280px;
+    margin-right: 2em;
+    /* padding-right: 2em; */
+}
+
+.two {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 0.8em;
+    /* border: 1px solid black; */
+}
+
+
+.Projects {
+    /* border: 1px solid black; */
+    max-width: 480px;
+    /* display: flex;
+    justify-content: flex-start;
+    flex-direction: column; */
+    /* margin-left: 2em; */
+}
+
+.Projects ul {
+    list-style-type: none;
+    font-family: 'Gloock', serif;
+    /* border: 1px solid black; */
+    padding: 0;
+    /* align-self: self-start; */
+}
+
+.Projects li::before {
+    content: "\2192";
+    margin-right: 10px;
+}
+
+.Skills {
+    /* border: 1px solid black; */
+}
+
+.Contact {
+    /* border: 1px solid black; */
 }
